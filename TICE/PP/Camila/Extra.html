@@ -1,0 +1,197 @@
+<html>
+<!-- cabeçalho --> 
+<head>
+<link rel="shortcut icon" href="fav.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- titulo da aba --> 
+<title>WONDERLAND</title>
+
+</head>
+
+<!-- menu hamburguer --> 
+<style>
+
+.big{
+	   
+	    width:70px; 
+		height:70px; 
+		margin-left:0px;
+		margin-right:1410px;
+		background-image:none;
+		border-style:ridge;
+		border-color: #fff;
+		
+	} 
+	
+    *,
+	*:before,
+	*:after 
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body 
+	{
+		background-color: black;
+	
+	}
+
+
+	.menu 
+	{
+		background: #FFF;
+        border-radius: 50%;
+        bottom: 25px;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: grabbing;
+        height: 60px;
+        position: absolute;
+        right: 25px;
+        transition:  box-shadow 1.1s cubic-bezier(.19,1,.22,1);
+        width: 60px;
+        z-index: 2;
+	}
+
+	.menu:hover
+	{
+		box-shadow: 0 0 0 8px #FFF, 0 0 0 8px #FFF;
+	}
+		
+	.hamburguer 
+	{
+	  position: relative;
+	  display: block;
+	  background: #000;
+	  width: 30px;
+	  height: 2px;
+	  top: 29px;
+	  left: 15px;
+	  transition: 0.5s ease-in-out;
+	}
+
+	.hamburguer:before,
+	.hamburguer:after 
+	{
+	  background: #000;
+	  content: '';
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  transition: 0.5s ease-in-out;
+	}
+
+	.hamburguer:before 
+	{
+	  top: -10px;
+	}
+
+	.hamburguer:after {
+	  bottom: -10px;
+	}
+
+	input {
+	  display: none;
+	}
+	
+	 input:checked ~ label .menu 
+	{
+        box-shadow: 0 0 0 130vw #FFF, 0 0 0 130vh #FFF;
+    }
+
+	input:checked ~ label .hamburguer
+	{
+	  transform: rotate(45deg);
+	}
+
+	input:checked ~ label .hamburguer:before 
+	{
+	  transform: rotate(90deg);
+	  top: 0;
+	}
+
+	input:checked ~ label .hamburguer:after 
+	{
+	  transform: rotate(90deg);
+	  bottom: 0;
+	}
+	
+	input:checked ~ ul {
+        opacity: 1;
+        visibility: visible;
+    }
+
+	
+	ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        font-size: 45px;
+        opacity: 0;
+        transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+        visibility: hidden;
+        z-index: 2;
+    }	
+	
+	a 
+	{
+        color: black;
+        display: block;
+        margin-bottom: 1em;
+        text-decoration: none;
+    }
+	
+
+</style>
+
+<!-- circulo do menu botão e expandir -->
+<body>
+
+
+  <input id="menu-hamburguer" type="checkbox" />
+
+  <label for="menu-hamburguer">
+    <div class="menu">
+      <span class="hamburguer"></span>
+    </div>
+  </label>
+  
+  <ul>	
+    <!-- lista com os links-->
+		
+		<p><b> Atividades Extras:</b></p><br>
+		<li><a href='AI.html' target="_blank"><img src="img/ai.png" width="60px" height="60px"> A.I</a></li>
+        <li><a href='resumo.html' target="_blank"><img src="img/resu.png" width="60px" height="60px"> Resumo</a></li>
+		<li><a href='thevoice.html' target="_blank"><img src="img/logovoice.png" width="60px" height="60px"> The Voice</a></li>
+		<li><a href='goo.html' target="_blank"><img src="img/goo.png" width="60px" height="60px"> World Of Goo</a></li>
+        <li><a href='filme.html'target="_blank"><img src="img/filme.png" width="60px" height="60px"> Filme: Jogo da Imitação</a></li>
+		<li><a href='video.html'target="_blank"><img src="img/yu.png" width="55px" height="60px"></img> Vídeo Aula Colaborativa </a></a></li>
+    </ul>
+  
+  <!-- imagem camera-->
+ <img src="img/cam.png" width="210px" height="129px"></img><br>
+ <!-- imagem placa-->
+ <img src="img/big.png" width="210px" height="129px"></img>
+   <!-- caixinha-->
+ 	
+	
+</body>
+
+</html>
+
+
+<!-- botaozinho menu hamburguer 
+	.menu {
+	  background: #fff;
+	  border-radius: 50%;
+	  width: 60px;
+	  height: 60px;
+	  position: fixed;
+	  bottom: 25px;
+	  right: 25px;
+	}
+	--> 

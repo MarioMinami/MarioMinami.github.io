@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<link rel="shortcut icon" href="fav.png" />
+<!-- titulo da aba --> 
+<title>WONDERLAND</title>
+<head>
+<link rel="stylesheet" href="estilo.css">
+<!-- define largura da pagina como largura do dispositivo -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- evitar problemas com caracteres em português-->
+<meta charset="utf-8">
+<script>
+function alternarMenu () {
+  /* seleciona o elemento do menu e mostrar ou esconde ele*/
+  document.querySelector('#conteudo').classList.toggle('ativo');
+}
+</script>
+</head>
+<body>
+
+<main class="conteudo" id="conteudo">
+<button class="botao-menu" onclick="alternarMenu()">
+<svg height="20px" viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+</button>
+
+<nav class="menu" id="menu">
+  <h1 class="titulo-menu"><i>  &nbsp AULAS-TICE</i></h1>
+  <div class="lista-link">
+    <a href="aula1.html">
+      <img src="img/lapis.svg"> 
+      <span>Interação & Interatividade </span>
+    </a><br>
+    <a href="aula2.html">
+      <img src="img/lapis.svg"> 
+      <span>Vygotsky & Aprendizagem colaborativa</span>
+    </a><br>
+    <a href="aula3.html">
+      <img src="img/lapis.svg"> 
+      <span> I.A.- Inteligência Artificial</span>
+    </a>
+	
+  </div>
+</nav>
+
+<center><p color="white"> Trilha Sonora </p></center>
+<!-- trilha sonora -->
+	<center><audio width="500" controls>
+		<source src="img/birds.mp3" >
+   </audio></center>
+   <br>
+   <center><img src="img/iaa.png"></center>
+   
+   
+
+</main>
+</body>
+</html>

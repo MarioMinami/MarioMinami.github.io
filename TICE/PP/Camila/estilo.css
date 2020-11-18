@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+.conteudo {
+  /* altura minima da pagina é igual altura da tela*/
+  min-height: 100vh;
+  /* esse ele elemento vai ser usado como ancora para posicionar outros 
+  e por precisa de estar posicionado relativamente */
+  position: relative;
+  background-image:url('img/zarvores5.jpg');
+  display: block;
+  background-color: #1abc9c;
+  padding: 0 50px;
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* tipo de fonte e sua cor*/
+  font-family: Arial;
+  color:white;
+}
+
+.menu {
+  width: 300px;
+  height: 100%;
+  /* ancora o menu no começo da pagina (topo esquerdo)*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* esconde o menu */
+  display: none;
+  /* fundo preto semi transparente (rgb + alpha) */
+  background-color: rgba(0,0,0 ,0.5);
+  /* margem interna */
+  padding: 5px 20px 10px 55px;
+  /* coloca menu acima da pagina*/
+  z-index: 20;
+  /* remove cortono do clique */
+  outline: none;
+  /* cor do texto */
+  color: white;
+}
+
+.conteudo.ativo .menu {
+  /* mostra o menu */
+  display: block;
+}
+
+.conteudo.ativo .botao-menu svg {
+  fill: white;
+}
+
+.botao-menu {
+  /* posiciona o botao do menu no topo da pagina */
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border: 0;
+  background-color: transparent;
+  /* cursor (pointero do mouse) de clique */
+  cursor: pointer;
+  /* coloca o botao acima de tudo*/
+  z-index: 30;
+}
+
+/* cor do botão menu fechado */
+.botao-menu svg{
+	fill:white;
+	background-color: black;
+	border:2px;
+	border-style:ridge;
+	border-color:white;
+/* espaçamento entre o botão e sua borda */
+	padding:6px;
+}
+
+.titulo-menu {
+}
+
+.lista-link {
+  
+}
+
+.lista-link a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.lista-link img {
+  height: 20px;
+  margin-right: 5px;
+}
+
