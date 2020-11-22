@@ -1,0 +1,129 @@
+body {
+  color: black;
+  background-color: rgb(125, 59, 190);
+  font-size: 1.6em;
+  font-family: Arial, "Times New Roman";
+  line-height: 30px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 1px #e6e6fa, -1px 1px 1px #e6e6fa, 1px -1px 1px #e6e6fa,
+    -1px -1px 1px #e6e6fa;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 0.8em;
+  text-indent: 30px;
+  margin-left: 90px;
+  margin-right: 100px;
+  word-spacing: 5px;
+}
+
+.box-one {
+  background-color: rgb(91, 81, 160);
+  color: rgb(255, 255, 255);
+  padding: 50px;
+  height: 900px;
+  width: 1680px;
+  margin: 50px;
+  border: 50px;
+  box-shadow: 5px 8px #2a2a3d;
+}
+
+.box-socials {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  height: 110px;
+  width: 1760px;
+  margin: 10px;
+  margin-left: -50px;
+  border: 10px;
+  border-color: #e6e6fa;
+}
+.box-two {
+  background-color: rgb(230, 80, 80);
+  padding: 50px;
+  height: 600px;
+  width: 1680px;
+  margin: 50px;
+  border: 50px;
+  box-shadow: 5px 8px #352626;
+  -webkit-box-align: center;
+}
+
+.box-essay {
+  background-color: rgb(216, 128, 128);
+  padding: 50px;
+  height: 650px;
+  width: 1680px;
+  margin: 50px;
+  border: 50px;
+  box-shadow: 5px 8px #2a2a3d;
+}
+
+.box-tables {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  height: 650px;
+  width: 1680px;
+  margin: 50px;
+  border: 50px;
+  box-shadow: 5px 8px #2a2a3d;
+  font-size: 0.8em;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  padding: 9px 10px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+table {
+  width: 800px;
+  margin: 20px;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  border-color: #e6e6fa;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(0, 0, 0);
+  color: #e6e6fa;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(0, 0, 0);
+  color: #e6e6fa;
+}
