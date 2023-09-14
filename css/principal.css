@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.container > div {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    transition: all ease 0.5s;
+}
+
+.container > div:hover {
+    transform: scale(0.98);
+    opacity: .7;
+}
+
+div h2 {
+    font-size: 2em;
+    margin: 10px;
+}
+
+div p {
+    font-size: 1.1em;
+}
+
+.container > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}   
+.container > div:nth-of-type(8) {
+    grid-column: 1 / 3;
+}
+.container > div:nth-of-type(9) {
+    grid-column: 3 / 5;
+}
+.container > div:nth-of-type(10) {
+    grid-column: 1 / 5;
+}
+
+
+.bg-1 {
+    background-image: url(https://img.freepik.com/fotos-gratis/conceito-de-programacao-de-navegacao-de-tecnologia-de-design-web_53876-163260.jpg?w=996&t=st=1694641335~exp=1694641935~hmac=6326d627ff10c1227103f3504331f0c47a5c7ecde57ccfb8fefe8c78fb0a1400);
+ }
+
+.bg-2 {
+    background-color: rgb(240, 241, 242); 
+} 
+.bg-3 {
+    background: url(https://thumbs.dreamstime.com/z/web-accessibility-businessman-hologram-concept-futuristic-176784379.jpg?w=992);
+}
+.bg-4 {
+    background: url(https://thumbs.dreamstime.com/z/asian-young-blind-woman-headphone-using-computer-refreshable-braille-display-terminal-technology-device-persons-188363610.jpg?w=992);
+}
+
+.bg-5 {
+    background: url(https://img.freepik.com/fotos-premium/a-room-with-a-large-display-of-planets-and-a-large-display-of-space-for-the-universe_662214-86667.jpg);
+}
+.bg-6 {
+    background: url(https://www.acnur.org/portugues/wp-content/uploads/2017/08/csm_08.2017.03_Brasil_Universidad_9dd7b568a0.jpg);
+}
